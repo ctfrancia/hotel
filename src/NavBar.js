@@ -11,13 +11,13 @@ import './NavBar.css';
 const NavBar = () => (
   <div className="navContainer">
     <nav>
-        <Link to="/">Home</Link>
-        <Link to="rooms">Rooms</Link>
-        <Link to="restaurant">Restaurant</Link>
-        logo
-        <Link to="weddings">Weddings</Link>
-        <Link to="membership">Membership</Link>
-        <Link to="contact">Contact us</Link>
+      <Link to="/">Home</Link>
+      <Link to="rooms">Rooms</Link>
+      <Link to="restaurant">Restaurant</Link>
+      logo
+      <Link to="weddings">Weddings</Link>
+      <Link to="membership">Membership</Link>
+      <Link to="contact">Contact us</Link>
     </nav>
     <Router>
       <Home path= "/" />

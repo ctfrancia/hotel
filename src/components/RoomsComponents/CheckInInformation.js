@@ -5,3 +5,4 @@ const CheckInInformation = () => (
 
   </div>
 );
+export default CheckInInformation;
