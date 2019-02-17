@@ -2,6 +2,7 @@ import React from 'react';
 import IndividualRoom from './IndividualRoom'
 import { connect } from 'react-redux';
 import './RoomSelector.css';
+import CONSTANTS from '../../_constants/constants';
 // import db from '../../db.json';
 import axios from 'axios';
 
@@ -9,7 +10,7 @@ class RoomSelector extends React.Component{
 
   componentDidMount() {
     axios
-      .get('../../db.json')
+      .get(CONSTANTS.getRoomsList)
       .then( data => {
         console.log(data);
 
