@@ -6,32 +6,12 @@ import PropTypes from 'prop-types';
 import { MenuItem, FormControl } from '@material-ui/core';
 import './AdultChildSelector.css';
 
-const styles = theme => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  formControl: {
-    margin: theme.spacing.unit,
-    minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing.unit * 2,
-  },
-});
-
 class AdultChildSelector extends React.Component {
   state = {
     adultCount: '',
     childCount: '',
     labelWidth: 0,
   };
-
-  // componentDidMount() {
-  //   this.setState({
-  //     labelWidth: ReactDOM.findDOMNode(this.InputLabelRef).offsetWidth,
-  //   });
-  // }
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value,
@@ -63,14 +43,15 @@ class AdultChildSelector extends React.Component {
               )}
             </Select>
           </FormControl>
-          <FormControl>
+          <FormControl className="form-control">
             <InputLabel htmlFor="child-Count">Children</InputLabel>
             <Select
-            value={this.state.childCount}
-            onChange={this.handleChange}
-            inputProps={{
-              name: 'childCount',
-              id: 'child-count',
+              className="s-input"
+              value={this.state.childCount}
+              onChange={this.handleChange}
+              inputProps={{
+                name: 'childCount',
+                id: 'child-count',
             }}>
               <MenuItem value="">
                 <em>None</em>
@@ -88,7 +69,5 @@ class AdultChildSelector extends React.Component {
     )
   }
 }
-AdultChildSelector.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+
 export default AdultChildSelector;

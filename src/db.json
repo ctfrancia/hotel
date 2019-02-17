@@ -1,0 +1,45 @@
+{
+  "db": {
+    "roomsTable": [
+      {
+        "id": 1,
+        "data": {
+          "caption": "Honeymoon Suite",
+          "description": "A gorgeous, spacious, and sunny room with a giant bed, hot tub, and personal kitchen",
+          "size": 30,
+          "unitOfMeasurement": "m2",
+          "numOfBeds": 1,
+          "maxAllowedPeople": 3,
+          "price": 300,
+          "currency":"€",
+          "imgPath": "https://www.pexels.com/photo/beige-couch-1571457/"
+        }
+      },{
+      "id": 2,
+      "data": {
+        "caption": "Weekend Getaway",
+        "description": "If you are looking for an affordable room with gorgeous views at an affordable price then look no further!",
+        "size": 25,
+        "unitOfMeasurement": "m2",
+        "numOfBeds": 2,
+        "maxAllowedPeople": 4,
+        "price": 150,
+        "currency": "€",
+        "imgPath": "https://www.pexels.com/photo/people-gathered-inside-house-sitting-on-sofa-1054974/"
+      }
+    },{
+      "id": 3,
+      "data": {
+        "caption": "Animal House!",
+        "description": "Are you and your friends looking for a nice beach rental where you can have some awesome parties for the weekend? This place is for you!",
+        "size": 50,
+        "unitOfMeasurement": "m2",
+        "numOfBeds": 5,
+        "maxAllowedPeople": 20,
+        "price": 1000,
+        "currency": "€",
+        "imgPath": "https://www.pexels.com/photo/people-standing-under-the-awning-1666467/"
+      }
+    }]
+  }
+}
