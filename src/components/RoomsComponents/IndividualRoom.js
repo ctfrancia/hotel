@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
-import Card from '@material-ui/core/Card';
-import classes from '*.module.scss';
+import { Paper, Card, CardHeader } from '@material-ui/core/';
+import './IndividualRoom.css';
+// import classes from '*.module.scss';
 
 
-const IndividualRoom = (props) => {
+function IndividualRoom(props) {
+
   return (
-    <div>
-      <Card className="">
-
+  <div>
+      <Card className="card">
+        <CardHeader
+        title={this.props.caption}
+        subheader={this.props.price}
+          />
       </Card>
     </div>
   )

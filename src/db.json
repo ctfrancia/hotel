@@ -12,7 +12,7 @@
           "maxAllowedPeople": 3,
           "price": 300,
           "currency":"€",
-          "imgPath": "https://www.pexels.com/photo/beige-couch-1571457/"
+          "imgPath": "http://blog.granitetransformations.com/wp-content/uploads/2011/10/Hotel-Room1.jpg"
         }
       },{
       "id": 2,
@@ -25,7 +25,7 @@
         "maxAllowedPeople": 4,
         "price": 150,
         "currency": "€",
-        "imgPath": "https://www.pexels.com/photo/people-gathered-inside-house-sitting-on-sofa-1054974/"
+        "imgPath": "https://www.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/04/10/Photos/Processed/hotels-kZnG--621x414@LiveMint.jpg"
       }
     },{
       "id": 3,
@@ -38,7 +38,7 @@
         "maxAllowedPeople": 20,
         "price": 1000,
         "currency": "€",
-        "imgPath": "https://www.pexels.com/photo/people-standing-under-the-awning-1666467/"
+        "imgPath": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/480/1280/90/media/aulani-resort/images/en/rooms-offers/rooms-suites/standard-room/standard-view-1-16x9.jpg"
       }
     }]
   }

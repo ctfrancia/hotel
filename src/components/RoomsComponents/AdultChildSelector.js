@@ -2,14 +2,14 @@
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { MenuItem, FormControl } from '@material-ui/core';
 import './AdultChildSelector.css';
 
 class AdultChildSelector extends React.Component {
   state = {
-    adultCount: '',
-    childCount: '',
+    adultCount: 1,
+    childCount: 1,
     labelWidth: 0,
   };
   handleChange = e => {

@@ -1,14 +1,13 @@
 const defaultState = {
-  data: {
     adultCount: '',
     childCount: '',
     arrivalDate: '',
     departureDate: '',
     aptCost: '',
-  },
+    rooms: [],
 };
 
-const data = (state = defaultState.data, action) => {
+const data = (state = defaultState, action) => {
   switch (action.type) {
     case 'ADULT_COUNT':
       return {
@@ -30,6 +29,10 @@ const data = (state = defaultState.data, action) => {
       return{
 
       }
+    case 'UPDATE_ROOMS':
+      return Object.assign({}, state, {
+        rooms: action.rooms
+      });
     default:
       return state;
   }
