@@ -1,11 +1,9 @@
 import React from 'react';
-// import IndividualRoom from './IndividualRoom'
 import { connect } from 'react-redux';
-import './RoomSelector.css';
 import './IndividualRoom.css';
 import CONSTANTS from '../../_constants/constants';
 import axios from 'axios';
-import updateRoomList from '../../actions/RoomActions';
+import { updateRoomList } from '../../actions/RoomActions';
 import { Card, CardHeader, CardMedia, CardContent, Typography, Button } from '@material-ui/core/';
 class RoomSelector extends React.Component{
 
@@ -17,22 +15,18 @@ class RoomSelector extends React.Component{
       })
   }
   handleSubmit = (e) => {
-    console.log('CLICKED BUTTON', e);
-
+    console.log('CLICKED BUTTON', e.target);
   };
   render(){
     if (!this.props.roomData === undefined) return <div>Loading...</div>;
     return (
       <div>
-          {this.props.roomData.rooms.map(info => <Card className="card">
-          {console.log(info.data)}
+          {this.props.roomData.rooms.map(info => <Card key ={info.data.caption} className="card">
             <CardHeader
-            key={info.data.caption}
             title={info.data.caption}
             subheader={info.data.price + info.data.currency}
           />
           <CardMedia
-          key={info.data.caption}
           className="card-media"
           image={info.data.imgPath}
           title={info.data.caption}
@@ -42,7 +36,7 @@ class RoomSelector extends React.Component{
               {info.data.description}
             </Typography>
           </CardContent>
-          <Button key={info.data.caption} className="card-button" variant="flat" color="primary" onClick={this.handleSubmit}>Add Room</Button>
+          <Button className="card-button" variant="text" color="primary" onClick={this.handleSubmit}>Add Room</Button>
       </Card>
           )}
       </div>

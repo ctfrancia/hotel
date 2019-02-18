@@ -5,8 +5,6 @@ import './CheckinInformation.css';
 
 const CheckInInformation = () => (
   <div className="ci-container">
-    {/* <<input type="date"/>
-    <input type="date"/> */}
     <DatePickerComponent />
     <AdultChildSelector />
 
