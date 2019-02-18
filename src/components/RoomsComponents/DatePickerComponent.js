@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { DatePicker } from 'material-ui-pickers';
-// import { MuiPickersUtilsProvider } from 'material-ui-pickers';
 
 class DateSelector extends Component {
   state = {
