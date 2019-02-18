@@ -18,13 +18,13 @@ const data = (state = defaultState, action) => {
 
     }
     case 'ARRIVAL_DATE':
-      return{
-
-    }
+      return Object.assign({}, state, {
+        arrivalDate: action.date,
+      });
     case 'DEPARTURE_DATE':
-      return {
-
-    }
+      return Object.assign({}, state, {
+        departureDate: action.date,
+      });
     case 'APT_COST':
       return{
 

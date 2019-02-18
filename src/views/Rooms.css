@@ -1,0 +1,8 @@
+.rooms-containter{
+
+}
+.rooms-and-summary{
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 450px; */
+}
